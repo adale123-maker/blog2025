@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('imagendefondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffb6b9;
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1.5px;
+  animation: latido 2s infinite;
+}
+
+.meta {
+  font-size: 0.95rem;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "item1 item2"
+    "item3 item4"
+    "item5 item6";
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.item1 { grid-area: item1; }
+.item2 { grid-area: item2; }
+.item3 { grid-area: item3; }
+.item4 { grid-area: item4; }
+.item5 { grid-area: item5; }
+.item6 { grid-area: item6; }
+
+.section {
+  font-family: "Exile", cursive;
+  background-color: #ffffff;
+  border-left: 5px solid #ffb6b9;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.section h2 {
+  margin-top: 0;
+  color: #e91e63;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+footer {
+  background-color: #ffb6b9;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+a {
+  color: #e91e63;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ❤️ Animación del título (ya estaba) */
+@keyframes latido {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* 💻 NUEVO: Animación para el logo */
+.logo-animado {
+  width: 250px;
+  margin-top: 15px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: flotar 4s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+#reloj {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px 20px;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
